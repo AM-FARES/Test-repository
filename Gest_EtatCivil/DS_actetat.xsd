@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_actetat" targetNamespace="http://tempuri.org/DS_actetat.xsd" xmlns:mstns="http://tempuri.org/DS_actetat.xsd" xmlns="http://tempuri.org/DS_actetat.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Gest_EtatCivilConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Gest_EtatCivilConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Gest_EtatCivil.Properties.Settings.GlobalReference.Default.Gest_EtatCivilConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="acteTableAdapter" GeneratorDataComponentClassName="acteTableAdapter" Name="acte" UserDataComponentName="acteTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Gest_EtatCivilConnectionString (Settings)" DbObjectName="Gest_EtatCivil.dbo.acte" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Num, AnneeAct, nomfils, nomfilsar, prenomfilsar, prenomfils, NationnaliteAR, NationnaliteFR, LieuNaissAR, LieuNaissFR, DateNaissance, DateNaissanceHJ, Sexe, prenomperear, prenommerear, prenompere, prenommere, nompere, nommere, perenomar, merenomar FROM dbo.acte</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Num" DataSetColumn="Num" />
+              <Mapping SourceColumn="AnneeAct" DataSetColumn="AnneeAct" />
+              <Mapping SourceColumn="nomfils" DataSetColumn="nomfils" />
+              <Mapping SourceColumn="nomfilsar" DataSetColumn="nomfilsar" />
+              <Mapping SourceColumn="prenomfilsar" DataSetColumn="prenomfilsar" />
+              <Mapping SourceColumn="prenomfils" DataSetColumn="prenomfils" />
+              <Mapping SourceColumn="NationnaliteAR" DataSetColumn="NationnaliteAR" />
+              <Mapping SourceColumn="NationnaliteFR" DataSetColumn="NationnaliteFR" />
+              <Mapping SourceColumn="LieuNaissAR" DataSetColumn="LieuNaissAR" />
+              <Mapping SourceColumn="LieuNaissFR" DataSetColumn="LieuNaissFR" />
+              <Mapping SourceColumn="DateNaissance" DataSetColumn="DateNaissance" />
+              <Mapping SourceColumn="DateNaissanceHJ" DataSetColumn="DateNaissanceHJ" />
+              <Mapping SourceColumn="Sexe" DataSetColumn="Sexe" />
+              <Mapping SourceColumn="prenomperear" DataSetColumn="prenomperear" />
+              <Mapping SourceColumn="prenommerear" DataSetColumn="prenommerear" />
+              <Mapping SourceColumn="prenompere" DataSetColumn="prenompere" />
+              <Mapping SourceColumn="prenommere" DataSetColumn="prenommere" />
+              <Mapping SourceColumn="nompere" DataSetColumn="nompere" />
+              <Mapping SourceColumn="nommere" DataSetColumn="nommere" />
+              <Mapping SourceColumn="perenomar" DataSetColumn="perenomar" />
+              <Mapping SourceColumn="merenomar" DataSetColumn="merenomar" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_actetat" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_actetat" msprop:Generator_UserDSName="DS_actetat">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="acte" msprop:Generator_TableClassName="acteDataTable" msprop:Generator_TableVarName="tableacte" msprop:Generator_TablePropName="acte" msprop:Generator_RowDeletingName="acteRowDeleting" msprop:Generator_RowChangingName="acteRowChanging" msprop:Generator_RowEvHandlerName="acteRowChangeEventHandler" msprop:Generator_RowDeletedName="acteRowDeleted" msprop:Generator_UserTableName="acte" msprop:Generator_RowChangedName="acteRowChanged" msprop:Generator_RowEvArgName="acteRowChangeEvent" msprop:Generator_RowClassName="acteRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Num" msprop:Generator_ColumnVarNameInTable="columnNum" msprop:Generator_ColumnPropNameInRow="Num" msprop:Generator_ColumnPropNameInTable="NumColumn" msprop:Generator_UserColumnName="Num">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnneeAct" msprop:Generator_ColumnVarNameInTable="columnAnneeAct" msprop:Generator_ColumnPropNameInRow="AnneeAct" msprop:Generator_ColumnPropNameInTable="AnneeActColumn" msprop:Generator_UserColumnName="AnneeAct">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nomfils" msprop:Generator_ColumnVarNameInTable="columnnomfils" msprop:Generator_ColumnPropNameInRow="nomfils" msprop:Generator_ColumnPropNameInTable="nomfilsColumn" msprop:Generator_UserColumnName="nomfils" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nomfilsar" msprop:Generator_ColumnVarNameInTable="columnnomfilsar" msprop:Generator_ColumnPropNameInRow="nomfilsar" msprop:Generator_ColumnPropNameInTable="nomfilsarColumn" msprop:Generator_UserColumnName="nomfilsar" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="prenomfilsar" msprop:Generator_ColumnVarNameInTable="columnprenomfilsar" msprop:Generator_ColumnPropNameInRow="prenomfilsar" msprop:Generator_ColumnPropNameInTable="prenomfilsarColumn" msprop:Generator_UserColumnName="prenomfilsar" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="prenomfils" msprop:Generator_ColumnVarNameInTable="columnprenomfils" msprop:Generator_ColumnPropNameInRow="prenomfils" msprop:Generator_ColumnPropNameInTable="prenomfilsColumn" msprop:Generator_UserColumnName="prenomfils" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NationnaliteAR" msprop:Generator_ColumnVarNameInTable="columnNationnaliteAR" msprop:Generator_ColumnPropNameInRow="NationnaliteAR" msprop:Generator_ColumnPropNameInTable="NationnaliteARColumn" msprop:Generator_UserColumnName="NationnaliteAR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NationnaliteFR" msprop:Generator_ColumnVarNameInTable="columnNationnaliteFR" msprop:Generator_ColumnPropNameInRow="NationnaliteFR" msprop:Generator_ColumnPropNameInTable="NationnaliteFRColumn" msprop:Generator_UserColumnName="NationnaliteFR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LieuNaissAR" msprop:Generator_ColumnVarNameInTable="columnLieuNaissAR" msprop:Generator_ColumnPropNameInRow="LieuNaissAR" msprop:Generator_ColumnPropNameInTable="LieuNaissARColumn" msprop:Generator_UserColumnName="LieuNaissAR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LieuNaissFR" msprop:Generator_ColumnVarNameInTable="columnLieuNaissFR" msprop:Generator_ColumnPropNameInRow="LieuNaissFR" msprop:Generator_ColumnPropNameInTable="LieuNaissFRColumn" msprop:Generator_UserColumnName="LieuNaissFR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DateNaissance" msprop:Generator_ColumnVarNameInTable="columnDateNaissance" msprop:Generator_ColumnPropNameInRow="DateNaissance" msprop:Generator_ColumnPropNameInTable="DateNaissanceColumn" msprop:Generator_UserColumnName="DateNaissance" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DateNaissanceHJ" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDateNaissanceHJ" msprop:Generator_ColumnPropNameInRow="DateNaissanceHJ" msprop:Generator_ColumnPropNameInTable="DateNaissanceHJColumn" msprop:Generator_UserColumnName="DateNaissanceHJ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sexe" msprop:Generator_ColumnVarNameInTable="columnSexe" msprop:Generator_ColumnPropNameInRow="Sexe" msprop:Generator_ColumnPropNameInTable="SexeColumn" msprop:Generator_UserColumnName="Sexe" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="prenomperear" msprop:Generator_ColumnVarNameInTable="columnprenomperear" msprop:Generator_ColumnPropNameInRow="prenomperear" msprop:Generator_ColumnPropNameInTable="prenomperearColumn" msprop:Generator_UserColumnName="prenomperear" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="prenommerear" msprop:Generator_ColumnVarNameInTable="columnprenommerear" msprop:Generator_ColumnPropNameInRow="prenommerear" msprop:Generator_ColumnPropNameInTable="prenommerearColumn" msprop:Generator_UserColumnName="prenommerear" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="prenompere" msprop:Generator_ColumnVarNameInTable="columnprenompere" msprop:Generator_ColumnPropNameInRow="prenompere" msprop:Generator_ColumnPropNameInTable="prenompereColumn" msprop:Generator_UserColumnName="prenompere" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="prenommere" msprop:Generator_ColumnVarNameInTable="columnprenommere" msprop:Generator_ColumnPropNameInRow="prenommere" msprop:Generator_ColumnPropNameInTable="prenommereColumn" msprop:Generator_UserColumnName="prenommere" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nompere" msprop:Generator_ColumnVarNameInTable="columnnompere" msprop:Generator_ColumnPropNameInRow="nompere" msprop:Generator_ColumnPropNameInTable="nompereColumn" msprop:Generator_UserColumnName="nompere" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nommere" msprop:Generator_ColumnVarNameInTable="columnnommere" msprop:Generator_ColumnPropNameInRow="nommere" msprop:Generator_ColumnPropNameInTable="nommereColumn" msprop:Generator_UserColumnName="nommere" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="perenomar" msprop:Generator_ColumnVarNameInTable="columnperenomar" msprop:Generator_ColumnPropNameInRow="perenomar" msprop:Generator_ColumnPropNameInTable="perenomarColumn" msprop:Generator_UserColumnName="perenomar" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="merenomar" msprop:Generator_ColumnVarNameInTable="columnmerenomar" msprop:Generator_ColumnPropNameInRow="merenomar" msprop:Generator_ColumnPropNameInTable="merenomarColumn" msprop:Generator_UserColumnName="merenomar" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:acte" />
+      <xs:field xpath="mstns:Num" />
+      <xs:field xpath="mstns:AnneeAct" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
